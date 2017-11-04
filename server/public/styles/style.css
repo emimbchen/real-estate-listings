@@ -2,3 +2,13 @@
     text-align: center;
     background-color: paleturquoise;
 }
+
+h3 {
+    text-align: center; 
+}
+
+.propertyDiv {
+    background-color: rgb(197, 175, 238);
+    padding: 10px;
+    margin: 10px;
+}

@@ -10,20 +10,20 @@ Application for a real estate company to display properties for rent and for sal
 
 ## tasks
 * [x] Create skeleton for mean stack
-* [ ] create for rent.html view
-* [ ] create for sale.html
-* [ ] create add properties.html
+* [x] create for rent.html view
+* [x] create for sale.html
+* [x] create add properties.html
 
-* [ ] set up sale router
-* [ ] set up rent router
-* [ ] create sale get route
-* [ ] create sale post route
-* [ ] create rent get route
-* [ ] create rent post route
-* [ ] create post route
+* [x] set up sale router
+* [x] set up rent router
+* [x] create sale get route
+* [x] create sale post route
+* [x] create rent get route
+* [x] create rent post route
+
 
 ## hardmode
-* [ ] delete route for existing listings
+* [x] delete route for existing listings
 * [ ] move existing requests into Angular Service
 
 ## promode

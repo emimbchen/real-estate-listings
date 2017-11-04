@@ -1,5 +1,10 @@
 <!-- controller is sc -->
 <div>
-    SALE
-    {{5+4}}
+    <h3>For Sale</h3>
+    <div class="propertyDiv" ng-repeat="sale in sc.sales">
+        <p>Cost: {{sale.cost}}</p>
+        <p>Square Feet: {{sale.sqft}}</p>
+        <p>City: {{sale.city}}</p>
+        <button ng-click="sc.delete(sale._id)" class="btn btn-danger">Delete</button>
+    </div>
 </div>

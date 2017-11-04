@@ -1,5 +1,23 @@
 <!-- controllerr is nc -->
 <div>
-    NEW!
-    {{2+3}}
+    <h3>Post A New Listing</h3>
+    <form class="form">
+        <div class="form-group">
+            <label>Property Type:</label>
+            <select ng-model="selectedType" ng-options= "type for type in nc.types"></select>
+        </div>
+        <div class="form-group">
+            <label>Cost: </label>
+           <input ng-model="nc.rent" type="text">
+        </div>
+        <div class="form-group">
+            <label>Square feet: </label>
+            <input ng-model="nc.sqft" type="text">
+        </div>
+        <div class="form-group">
+            <label>City: </label>
+            <input ng-model="nc.city" type="text">
+        </div>
+        <button class="btn btn-primary" ng-click="nc.submit(selectedType)">Submit</button>
+    </form>
 </div>

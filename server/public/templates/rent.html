@@ -1,5 +1,10 @@
 <!-- controller is rc -->
 <div>
-    RENT
-    {{3+3}}
+    <h3>Rentals</h3>
+        <div class="propertyDiv" ng-repeat="property in rc.rentals">
+            <p>Rent: {{property.rent}}</p>
+            <p>Square Feet: {{property.sqft}}</p>
+            <p>City: {{property.city}}</p>
+            <button ng-click="rc.delete(property._id)" class="btn btn-danger">Delete</button>
+        </div>
 </div>
