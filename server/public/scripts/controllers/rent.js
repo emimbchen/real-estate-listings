@@ -1,24 +1,17 @@
-myApp.controller('RentController', function ($http) {
+myApp.controller('RentController', function (ListService) {
     console.log('Rent Controller Created');
     var self = this;
     
     //delete route
     self.delete = function (id) {
-        $http.delete('/rental/' + id).then(function (response) {
-            console.log('delete sent');
-            refreshRentals();
-        }).catch(function (error) {
-            console.log('delete not sent');
-        });
+    ListService.delete(id);
     }
 
     //get route
     var refreshRentals = function(){
-        $http.get('/rental').then(function(response){
-            self.rentals = response.data;
-        }).catch(function(error){
-            console.log('No rentals for you');
-        });
+    ListService.refreshRentals();
     }
+
     refreshRentals();
+    self.result = ListService.rentals;
 })

@@ -24,7 +24,7 @@ Application for a real estate company to display properties for rent and for sal
 
 ## hardmode
 * [x] delete route for existing listings
-* [ ] move existing requests into Angular Service
+* [x] move existing requests into Angular Service
 
 ## promode
 * [ ] update an existing record with a pop up (modal)

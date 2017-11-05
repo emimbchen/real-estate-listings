@@ -1,7 +1,7 @@
 <!-- controller is rc -->
 <div>
     <h3>Rentals</h3>
-        <div class="propertyDiv" ng-repeat="property in rc.rentals">
+        <div class="propertyDiv" ng-repeat="property in rc.result.data">
             <p>Rent: {{property.rent}}</p>
             <p>Square Feet: {{property.sqft}}</p>
             <p>City: {{property.city}}</p>
