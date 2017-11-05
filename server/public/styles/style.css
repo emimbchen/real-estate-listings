@@ -1,14 +1,46 @@
 .jumbotron {
     text-align: center;
-    background-color: paleturquoise;
+    background-color: #03275A;
+    color: white;
+    margin-bottom: 0px;
 }
 
-h3 {
+h2 {
     text-align: center; 
+    margin: 20px;
 }
 
 .propertyDiv {
-    background-color: rgb(197, 175, 238);
+    background-color: #1A7DD7;
     padding: 10px;
     margin: 10px;
+}
+
+button{
+    background-color: #F37402;
+    color: black;
+}
+
+ul {
+    background-color: #F2B809;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+#navBar {
+    background-color: #F2B809;
+}
+
+form {
+    background-color:#1A7DD7;
+    padding: 20px;
+    margin: 10px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color:#F37402;
+  text-decoration: none;
 }

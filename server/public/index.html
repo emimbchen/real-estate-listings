@@ -17,9 +17,13 @@
 </head>
 <body ng-app= "myApp">
     <h1 class="jumbotron">The Realest of Estates</h1>
-    <a href="/#!/sale">For Sale</a>
-    <a href="/#!/rent">For Rent</a>
-    <a href="/#!/new">New Posting</a>
+    <div class="container-fluid" id="navBar">
+        <ul class="nav navbar-nav">
+        <li><a href="/#!/sale">For Sale</a></li>
+        <li><a href="/#!/rent">For Rent</a></li>
+        <li><a href="/#!/new">New Posting</a></li>
+        </ul>
+    </div>
     <main class="container" ng-view>
 
     </main>
