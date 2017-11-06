@@ -47,4 +47,19 @@ router.delete('/:id', function (req, res) {
     });
 });
 
+//put
+
+router.put('/:id', function (req, res){
+    var id = req.params.id;
+    Rent.update({"_id": id}, function(err,data){
+        if (err) {
+            console.log('error in the rental put', err);
+            res.sendStatus(500);
+        }else {
+            res.sendStatus(201);
+            console.log('updated!');
+        }
+    });
+}); // end put route
+
 module.exports = router;

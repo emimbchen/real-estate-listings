@@ -2,9 +2,10 @@
 <div>
     <h2>Rentals</h2>
         <div class="propertyDiv" ng-repeat="property in rc.result.data">
-            <p>Rent: {{property.rent}}</p>
-            <p>Square Feet: {{property.sqft}}</p>
-            <p>City: {{property.city}}</p>
+            <p>Rent: {{property.rent}}</p><button ng-hide="rc.hidden" ng-click="rc.update(property._id, property.rent)" class="btn btn-default btn-xs">Update</button><br>
+            <p>Square Feet: {{property.sqft}}</p><button ng-hide="rc.hidden" class="btn btn-default btn-xs">Update</button><br>
+            <p>City: {{property.city}}</p><button ng-hide="rc.hidden" class="btn btn-default btn-xs">Update</button><br>
             <button ng-click="rc.delete(property._id)" class="btn">Delete</button>
+            <button ng-click= "rc.hidden=!rc.hidden" class="btn btn-default">Update</button>
         </div>
 </div>

@@ -5,6 +5,10 @@ myApp.controller('NewController', function (ListService) {
     var property = {};
 
     self.submit = function(selected){
+        swal({
+            text: 'Submitted',
+            icon: "success",
+        });
     property = {
         rent: self.rent,
         sqft: self.sqft,

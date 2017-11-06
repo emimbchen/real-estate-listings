@@ -44,3 +44,7 @@ form {
   background-color:#F37402;
   text-decoration: none;
 }
+
+p {
+    display: inline;
+}

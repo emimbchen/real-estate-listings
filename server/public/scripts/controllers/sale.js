@@ -12,6 +12,6 @@ myApp.controller('SaleController', function(ListService){
 
     self.refreshSales();
 
-    self.result = ListService.sales;
+self.result = ListService.sales;
 
 });

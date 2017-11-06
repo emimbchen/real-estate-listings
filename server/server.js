@@ -16,13 +16,23 @@ app.use('/rental', rentals);
 
 //mongoose
 var mongoose = require('mongoose');
-var databaseUrl = 'mongodb://localhost:27017/realestate';
+var mongoURI = '';
+
+if (process.env.MONGODB_URI) {
+    // use the string value of the environment variable
+    mongoURI = process.env.MONGODB_URI;
+} else {
+    // use the local database server
+    mongoURI = 'mongodb://localhost:27017/realestate';
+}
 
 mongoose.connection.on('connected', function(){
     console.log('we got a mongoose');
 });
 
-mongoose.connect(databaseUrl);
+mongoose.connect(databaseUrl, {
+    useMongoClient: true
+});
 
 //start
 app.listen(port, function(){
