@@ -18,7 +18,7 @@ app.use('/rental', rentals);
 var mongoose = require('mongoose');
 var mongoURI = '';
 
-if (process.env.MONGODB_URI) {
+if (process.env.MONGODB_URI != undefined) {
     // use the string value of the environment variable
     mongoURI = process.env.MONGODB_URI;
 } else {
