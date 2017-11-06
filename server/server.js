@@ -30,7 +30,7 @@ mongoose.connection.on('connected', function(){
     console.log('we got a mongoose');
 });
 
-mongoose.connect(databaseUrl, {
+mongoose.connect(mongoURI, {
     useMongoClient: true
 });
 
